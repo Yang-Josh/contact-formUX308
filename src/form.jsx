@@ -9,11 +9,11 @@ export function SubscriberForm() {
         console.log(formObject);
     }}>
       <Form.Field>
-        <Form.Label>Username</Form.Label>
+        <Form.Label>Your name</Form.Label>
         <Form.Control>
           <Form.Input
-            color="success"
-            name="username"
+            color=""
+            name="Your name"
           />
           <Icon align="left" size="small">
             <i className="fas fa-user" />
@@ -22,14 +22,14 @@ export function SubscriberForm() {
             <i className="fas fa-check" />
           </Icon>
         </Form.Control>
-        <Form.Help color="success">This username is available</Form.Help>
+        <Form.Help color="success">Please enter your name</Form.Help>
       </Form.Field>
 
       <Form.Field>
-        <Form.Label>Email</Form.Label>
+        <Form.Label>Email or Phone number</Form.Label>
         <Form.Control>
           <Form.Input
-            color="danger"
+            color=" "
             name="email"
           />
           <Icon align="left" size="small">
@@ -39,7 +39,7 @@ export function SubscriberForm() {
             <i className="fas fa-exclamation-triangle" />
           </Icon>
         </Form.Control>
-        <Form.Help color="danger">This email is invalid</Form.Help>
+        <Form.Help color="link">Please enter your email or phone number</Form.Help> 
       </Form.Field>
 
       <Form.Field>
@@ -49,26 +49,31 @@ export function SubscriberForm() {
             <Form.Select
               name="subject"
             >
-              <option value="select-dropdown">Select dropdown</option>
-              <option value="with-options">With options</option>
+              <option value="Booking">Booking</option>
+              <option value="Food Review">Food Review</option>
+              <option value="Service Critique">Service Critique</option>
+              <option value="Other Critique">Other Critique</option>
+              <option value="Other">Other</option>
             </Form.Select>
           </Form.Control>
           <Form.Control fullwidth loading>
-            <Form.Input placeholder="With loading state" />
+            <Form.Input placeholder="We would like to hear your thoughts" />
           </Form.Control>
         </Form.Field>
       </Form.Field>
 
       <Form.Field kind="group">
         <Form.Control>
-          <Button color="link">Submit</Button>
+          <Button color="info">Submit</Button>
         </Form.Control>
         <Form.Control>
-          <Button color="link" colorVariant="light">
+          <Button color="danger" colorVariant="">
             Cancel
           </Button>
         </Form.Control>
       </Form.Field>
+
+  
 
     </form>
 }
