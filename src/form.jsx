@@ -49,7 +49,8 @@ export function SubscriberForm() {
             <Form.Select
               name="subject"
             >
-              <option value="Booking">Booking</option>
+              <option value="General Contact">General Contact</option>
+              <option value="Booking Questions">Booking Questions</option>
               <option value="Food Review">Food Review</option>
               <option value="Service Critique">Service Critique</option>
               <option value="Other Critique">Other Critique</option>
@@ -57,7 +58,7 @@ export function SubscriberForm() {
             </Form.Select>
           </Form.Control>
           <Form.Control fullwidth loading>
-            <Form.Input placeholder="We would like to hear your thoughts" />
+            <Form.Input placeholder="We would love to hear your thoughts" />
           </Form.Control>
         </Form.Field>
       </Form.Field>
